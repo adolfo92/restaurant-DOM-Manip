@@ -1,2 +1,2 @@
 # restaurant-DOM-Manip
-Dom manipulation repo
+Webpack DOM manipulation project 
