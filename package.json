@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-dom-manip",
+  "version": "1.0.0",
+  "description": "Webpack DOM manipulation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adolfo92/restaurant-DOM-Manip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adolfo92/restaurant-DOM-Manip/issues"
+  },
+  "homepage": "https://github.com/adolfo92/restaurant-DOM-Manip#readme",
+  "devDependencies": {
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3"
+  }
+}
