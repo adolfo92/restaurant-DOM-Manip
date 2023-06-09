@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/adolfo92/restaurant-DOM-Manip#readme",
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.85.1",
     "webpack-cli": "^5.1.3"
   }
