@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+}
+
+.navItem {
+  margin: 0px 10px 0px 10px;
+  transition: ease-in 0.2s;
+}
+.navItem:hover {
+  font-size: 20px;
+}
