@@ -1,4 +1,3 @@
-import pastaMan from "../img/lostInSauce.jpg";
 import home from "./home.js";
 import memes from "./memesMenu";
 import contact from "./contact";

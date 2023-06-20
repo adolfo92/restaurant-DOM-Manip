@@ -10,6 +10,10 @@ function homeLoader() {
   description.classList.add("description");
   description.textContent = "You will never forgetti";
 
+  const mrSpagetthiPhoto = new Image();
+  /*mrSpagetthiPhoto.src = pastaLaVista;
+  mrSpagetthiPhoto.classList.add("homePhoto");*/
+
   wrapper.appendChild(title);
   wrapper.appendChild(description);
 

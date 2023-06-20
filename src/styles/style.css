@@ -1,5 +1,22 @@
+/*--------------------------Color Pallete*/
+
+/*--------------------------Fonts*/
+@font-face {
+  font-family: "horror";
+  src: url("../fonts/who_asks_satan.ttf") format("ttf");
+  font-weight: 500;
+  font-size: medium;
+  font-style: normal;
+}
+/*--------------------------Content zone*/
+#content {
+  display: flex;
+  flex-direction: column;
+}
+/*--------------------------Navigation bar*/
 nav {
   display: flex;
+  order: 1;
 }
 
 .navItem {
@@ -8,4 +25,22 @@ nav {
 }
 .navItem:hover {
   font-size: 20px;
+}
+
+/*--------------------------Footer*/
+footer {
+  display: flex;
+  order: 3;
+}
+
+/*--------------------------wrapper*/
+.wrapper {
+  display: grid;
+  order: 2;
+}
+
+/*--------------------------Home module*/
+.homePhoto {
+  max-height: 30%;
+  min-height: 100px;
 }
