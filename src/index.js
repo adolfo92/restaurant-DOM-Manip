@@ -1,5 +1,8 @@
 import pageLoader from "./modules/page-load.js";
 import consoleBanner from "./modules/console.js";
+
+// --------- Assets importing --------------
+import "./img/favicon/murcielago.png";
 import "./styles/style.css";
 import "./fonts/who_asks_satan.ttf";
 
@@ -10,7 +13,12 @@ const load = pageLoader;
 // Navbar maker
 const navBar = document.createElement("nav");
 
-const navbarItems = ["home", "memes", "contact"];
+const webTitle = document.createElement("h1");
+webTitle.textContent = "Deathrock diaries";
+webTitle.classList.add("webTitle");
+navBar.appendChild(webTitle);
+
+const navbarItems = ["home", "content", "contact"];
 for (let i = 0; i < navbarItems.length; i++) {
   const navItem = document.createElement("div");
   navItem.classList.add(navbarItems[i]);

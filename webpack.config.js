@@ -7,8 +7,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpeg|jpg|gif|svg)$/i,
+        test: /\.(png|jpeg|jpg|gif|svg|webp)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "[name][ext]",
+        },
       },
       {
         test: /\.css$/i,

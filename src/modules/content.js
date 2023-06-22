@@ -1,9 +1,9 @@
-function memeLoader() {
+function content() {
   const wrapper = document.createElement("div");
   wrapper.classList.add("wrapper");
 
-  console.log("memes check");
+  console.log("content check");
   return wrapper;
 }
 
-export default memeLoader;
+export default content;

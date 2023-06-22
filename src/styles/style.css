@@ -1,46 +1,133 @@
 /*--------------------------Color Pallete*/
+:root {
+  --blackColor: #2c2c2c;
+  --blacker: #1f1f1f;
+  --boneWhite: #faf6f1;
+}
+
+/*--------------------------Global stuff */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--blackColor);
+  color: var(--boneWhite);
+}
 
 /*--------------------------Fonts*/
 @font-face {
-  font-family: "horror";
-  src: url("../fonts/who_asks_satan.ttf") format("ttf");
-  font-weight: 500;
+  font-family: "horrorFont";
+  src: url("../fonts/who_asks_satan.ttf") format("truetype");
+  font-weight: 900;
   font-size: medium;
   font-style: normal;
 }
+
 /*--------------------------Content zone*/
 #content {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 /*--------------------------Navigation bar*/
 nav {
+  box-sizing: border-box;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   order: 1;
+  height: 10vh;
+  font-family: "horrorFont";
+  font-size: 30px;
+  gap: 3%;
+  background-color: var(--blacker);
 }
 
 .navItem {
   margin: 0px 10px 0px 10px;
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
+  align-content: center;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+  font-family: "horrorFont";
 }
 .navItem:hover {
-  font-size: 20px;
+  font-size: 1.25em;
+}
+
+.webTitle {
+  font-family: "horrorFont";
+  font-size: 4rem;
+  color: var(--boneWhite);
+  margin-right: auto;
+  margin-left: 20px;
+  /*padding-right: 100px;*/
 }
 
 /*--------------------------Footer*/
 footer {
   display: flex;
   order: 3;
+  width: 100vw;
+  height: 5%;
+  background-color: var(--blacker);
 }
 
 /*--------------------------wrapper*/
 .wrapper {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   order: 2;
 }
 
+/*--------------------------Inter module stuff*/
+
+.card {
+  flex: 1;
+  align-self: center;
+  width: max(70%, 400px);
+  border-radius: 30px;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blacker);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.writingCard {
+  margin: 30px 10px 30px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*--------------------------Home module*/
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+p.homeArticle {
+  max-height: 285px;
+  overflow: hidden;
+  scrollbar-width: 5px;
+}
+
 .homePhoto {
-  max-height: 30%;
-  min-height: 100px;
+  width: max(25%, 186px);
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 30px 30px 0;
+}
+
+.description {
+  max-height: max(400px, 80%);
 }
