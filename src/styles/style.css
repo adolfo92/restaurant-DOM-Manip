@@ -54,6 +54,7 @@ nav {
   font-size: 25px;
   gap: 3%;
   background-color: var(--blacker);
+  margin-right: 3px;
 }
 
 .navItem {
@@ -67,6 +68,11 @@ nav {
 }
 .navItem:hover {
   font-size: 1.25em;
+}
+
+.active {
+  color: rgb(24, 206, 0);
+  -webkit-text-stroke: 0.5px #000000;
 }
 
 .webTitle {
@@ -122,6 +128,8 @@ footer {
   margin-top: 20px;
   font-size: 50px;
   font-family: "melted-monster";
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
 }
 
 p.homeArticle {
