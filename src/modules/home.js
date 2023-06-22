@@ -15,20 +15,8 @@ function homeLoader() {
   const title = document.createElement("h1");
   title.textContent = "Welcome";
   title.classList.add("title");
-  /*
-  const description = document.createElement("div");
-  description.classList.add("description");
-  description.classList.add("card");
 
-  description.appendChild(writeMethis(article.main, "homeArticle"));
-
-  const rozzWilliams = new Image();
-  rozzWilliams.src = rozzPhoto;
-  rozzWilliams.classList.add("homePhoto");
-  description.appendChild(rozzWilliams);
-*/
   wrapper.appendChild(title);
-  //wrapper.appendChild(description);
   wrapper.appendChild(
     cardMaker(
       null,
