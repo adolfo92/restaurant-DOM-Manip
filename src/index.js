@@ -32,7 +32,7 @@ for (let i = 0; i < navbarItems.length; i++) {
 contentDiv.appendChild(navBar);
 
 // Load index page content
-contentDiv.appendChild(load("contact"));
+contentDiv.appendChild(load("home"));
 
 // navbar Event Listeners
 const allNavItems = document.querySelectorAll(".navItem");
