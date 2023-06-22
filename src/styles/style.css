@@ -27,6 +27,14 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "melted-monster";
+  src: url("../fonts/melted_monster.ttf") format("truetype");
+  font-weight: 900;
+  font-size: medium;
+  font-style: normal;
+}
+
 /*--------------------------Content zone*/
 #content {
   width: 100vw;
@@ -43,7 +51,7 @@ nav {
   order: 1;
   height: 10vh;
   font-family: "horrorFont";
-  font-size: 30px;
+  font-size: 25px;
   gap: 3%;
   background-color: var(--blacker);
 }
@@ -55,7 +63,7 @@ nav {
   width: 10%;
   text-align: center;
   cursor: pointer;
-  font-family: "horrorFont";
+  font-family: "melted-monster";
 }
 .navItem:hover {
   font-size: 1.25em;
@@ -112,7 +120,8 @@ footer {
 .title {
   text-align: center;
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: "melted-monster";
 }
 
 p.homeArticle {
