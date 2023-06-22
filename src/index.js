@@ -5,6 +5,7 @@ import consoleBanner from "./modules/console.js";
 import "./img/favicon/murcielago.png";
 import "./styles/style.css";
 import "./fonts/who_asks_satan.ttf";
+import github from "./img/favicon/github-mark-white.png";
 
 const contentDiv = document.querySelector("#content");
 
@@ -31,7 +32,7 @@ for (let i = 0; i < navbarItems.length; i++) {
 contentDiv.appendChild(navBar);
 
 // Load index page content
-contentDiv.appendChild(load("home"));
+contentDiv.appendChild(load("contact"));
 
 // navbar Event Listeners
 const allNavItems = document.querySelectorAll(".navItem");
@@ -49,15 +50,19 @@ function load_other_page(page) {
 
 // Footer maker
 const footer = document.createElement("footer");
+const githubLogo = new Image();
+githubLogo.src = github;
+githubLogo.classList.add("ghLogo");
 
 const footerNameHolder = document.createElement("div");
 footerNameHolder.classList.add("footer_name");
-footerNameHolder.textContent = "Adolfo Castro";
+footerNameHolder.textContent = "Adolfo Castro - 2023";
 
 const footerGHHolder = document.createElement("a");
 footerGHHolder.classList.add("GH");
 footerGHHolder.href = "https://www.github.com/adolfo92";
-footerGHHolder.textContent = "github";
+footerGHHolder.textContent = "GitHub";
+footerGHHolder.appendChild(githubLogo);
 
 footer.appendChild(footerNameHolder);
 footer.appendChild(footerGHHolder);
